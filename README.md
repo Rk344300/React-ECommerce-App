@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# React-ECommerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Deployed URL :
 
-## Available Scripts
+# API Reference :
 
-In the project directory, you can run:
+https://my-json-server.typicode.com/Rk344300/ecart/products
 
-### `npm start`
+# Step to run the Project:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone repo :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To install the dependencies :
 
-### `npm test`
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the application :
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+open http://localhost:3000 to view it in your browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Feature
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navbar
 
-### `npm run eject`
+- Showing cart items count
+- Showing relevant navigation links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. All products page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Showing list of products from the API.
+- Each product is editable by clicking on the “pencil” button. And we can edit that product inline. On finish editing the product, showing Notification.
+- Each product is deletable, on clicking of the delete button user will be able to delete the product and showing Notification.
+- Implement a sort button. On clicking it will sort by “price” and show a cross button just beside it. On clicking the cross button removing the sort.
+- Giving the button to add a product to cart.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Create page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- On clicking the Add button adding the product and show Notification
 
-## Learn More
+4. Product detail page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Showing all the details of a product
+- Giving a button to add a product to cart
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Cart page
 
-### Code Splitting
+- Showing all the items in the cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Folder Structure
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+└── src
+├── actions
+│ └── index.js
+├── api
+│ └── index.js
+├── Components
+│ ├── AddItem.js
+│ ├── Cart.js
+│ ├── CartItem.js
+│ ├── ItemDetails.js
+│ ├── Navbar.js
+│ ├── ProductItem.js
+│ ├── ProductList.js
+│ └── SortItem.js
+├── Notification
+│ └── config.js
+├── reducers
+│ └── index.js
+├── App.css
+├── App.js  
+ ├── db.json
+├── index.css
+└── index.js
