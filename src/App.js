@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { additems } from './actions';
 import customFetch from './api';
 import { ToastContainer } from "react-toastify";
@@ -45,19 +45,21 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <ToastContainer />
-        <Navbar />
-        <Routes>
-          <Route path="/" exact element={<ProductList />} />
-          <Route path='/additem' element={<AddItem />} />
-          <Route path={`/itemDetails/${itemDetail.id}`}
-            element={<ItemDetail itemDetail={itemDetail} />} />
-          <Route path="/cartDetails" element={<CartItem />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Router basename="/React-ECommerce-App">
+
+
+      <ToastContainer />
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<ProductList />} />
+        <Route path='/additem' element={<AddItem />} />
+        <Route path={`/itemDetails/${itemDetail.id}`}
+          element={<ItemDetail itemDetail={itemDetail} />} />
+        <Route path="/cartDetails" element={<CartItem />} />
+      </Routes>
+
+
+    </Router>
   );
 }
 
