@@ -1,14 +1,14 @@
 # React-ECommerce App
 
 # Deployed URL :
+  https://rk344300.github.io/React-ECommerce-App
 
 # API Reference :
-
 https://my-json-server.typicode.com/Rk344300/ecart/products
 
 # Step to run the Project:
 
-Clone repo :
+Clone repo :  https://github.com/Rk344300/React-ECommerce-App
 
 To install the dependencies :
 
